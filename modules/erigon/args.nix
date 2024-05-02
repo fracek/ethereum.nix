@@ -203,6 +203,11 @@ with lib; {
     };
   };
 
+  prune = mkOption {
+    type = types.nullOr types.str;
+    default = null;
+  };
+
   metrics = {
     enable = mkEnableOption (mdDoc "Enable metrics collection and reporting.");
 
